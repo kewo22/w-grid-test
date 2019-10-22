@@ -1,0 +1,57 @@
+table {
+  border-collapse: collapse;
+  background: white;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pane {
+  background: #eee;
+}
+.pane-hScroll {
+  overflow: auto;
+  width: 400px;
+  background: green;
+}
+.pane-vScroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 200px;
+  background: red;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  border: 1px solid #d5d5d5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.full-wrapper{
+  width: 400px;
+  display: flex;
+}
