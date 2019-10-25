@@ -35,7 +35,7 @@
 				<table>
 					<tbody>
             
-						<tr *ngFor="let data of grid.data; let i = index">
+						<tr *ngFor="let data of data; let i = index">
 							<td *ngFor="let colDef of grid.columnDefs; let i = index">{{data[colDef.name]}}</td>
 						</tr>
 						
